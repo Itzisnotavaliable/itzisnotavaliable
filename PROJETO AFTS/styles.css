@@ -1,0 +1,64 @@
+body {
+  background: #121212;   /* // Fundo escuro estilo Netflix */
+  color: white;          /* // Texto branco */
+  font-family: Arial;    /* // Fonte padrão limpa */
+  padding: 20px;         /* // Espaço interno */
+}
+
+.grid {
+  display: grid;  /* // Ativa um layout de grid */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* // Cards se organizam automaticamente */
+
+  gap: 20px;      /* // Espaço entre os cards */
+  margin-top: 20px;
+}
+
+.card {
+  background: #1f1f1f;   /* // Fundo escuro elegante */
+  padding: 20px;
+  border-radius: 12px;   /* // Bordas arredondadas */
+  cursor: pointer;       /* // Cursor de clique */
+  transition: 0.2s;      /* // Animação suave */
+}
+
+.card:hover {
+  transform: scale(1.03); /* // Efeito de zoom no hover */
+  background: #282828;    /* // Fundo fica mais claro */
+}
+
+/* MODAL = janela pop-up */
+.modal {
+  display: none;               /* // Escondido até ser aberto */
+  position: fixed;             /* // Fica por cima da tela */
+  top: 0;
+  left: 0;
+  width: 100%;                 /* // Tamanho full */
+  height: 100%;
+  background: rgba(0,0,0,0.8); /* // Fundo escurecido */
+  backdrop-filter: blur(3px);  /* // Efeito de blur bonito */
+  
+  justify-content: center;     /* // Centraliza horizontalmente */
+  align-items: center;         /* // Centraliza verticalmente */
+}
+
+.modal-content {
+  background: #1f1f1f;       /* // Caixa escura */
+  padding: 20px;
+  border-radius: 12px;
+  width: 500px;              /* // Tamanho fixo */
+  max-height: 90vh;          /* // Altura máxima */
+  overflow-y: auto;          /* // Rola pra baixo se precisar */
+}
+
+.close {
+  float: right;              /* // Joga o X pra direita */
+  font-size: 28px;           /* // Tamanho do X */
+  cursor: pointer;           /* // Torna clicável */
+}
+
+#modalImg {
+  width: 100%;               /* // A imagem ocupa toda a largura */
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
