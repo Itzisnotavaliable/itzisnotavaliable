@@ -6,9 +6,9 @@ O objetivo deste projeto é mostrar como, ao longo do ensino médio, conseguimos
 
 Quero deixar meu agradecimento sincero a vocês que compoem o time 08, assim como eu:
 
-Artur Coelho
-Gabriel Vitor
-Mateus Tiago
+Artur Coelho,
+Gabriel Vitor,
+Mateus Tiago,
 Samuel Erivaldo
 
 Obrigado pelo ano de amizade, respeito e parceria. Fiquei realmente feliz e honrado por ter sido chamado para o grupo de trabalho, mesmo com aquele medo inicial de não estar à altura, de ser insuficiente ou atrapalhar. Vocês mostraram que juntos somos mais fortes, e que cada ideia, cada esforço, faz diferença.
