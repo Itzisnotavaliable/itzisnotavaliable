@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<!-- // Diz ao navegador que estamos usando HTML moderno -->
+
+<html lang="pt-br">
+<!-- // Define o idioma da página, importante pra acessibilidade -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- // Permite acentos e caracteres especiais -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- // Faz o site ficar responsivo no celular -->
+
+  <title>Nossos Filmes</title>
+  <!-- // Título da aba do navegador -->
+
+  <link rel="stylesheet" href="styles.css">
+  <!-- // Conecta o CSS à página -->
+</head>
+
+<body>
+
+  <h1>Nossos Filmes</h1>
+  <!-- // Título principal do site -->
+
+  <div id="filmes-container" class="grid"></div>
+  <!-- // Contêiner onde o JS vai colocar os cards dinamicamente -->
+
+  <!-- MODAL (a janelinha que abre) -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      
+      <span id="closeModal" class="close">&times;</span>
+      <!-- // Botão X para fechar o modal -->
+
+      <img id="modalImg" src="" alt="">
+      <!-- // A imagem do filme aparece aqui -->
+
+      <h2 id="modalTitulo"></h2>
+      <!-- // Título do filme -->
+
+      <p id="modalElenco"></p>
+      <!-- // Elenco do filme -->
+
+      <p id="modalSinopse"></p>
+      <!-- // Sinopse do filme -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <!-- // Carrega o JavaScript no final -->
+</body>
+</html>
