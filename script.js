@@ -29,7 +29,7 @@ const filmes = [
     titulo: "AFTS 3 — Cada Acerto é Milagre, e Cada Erro Vira um Espetáculo Patacumbástico", 
     elenco: "Andrey Vieira, Matheus Thiago, Artur Coelho, Gabriel Vitor, Samuel Erivaldo, Daniela de Assis, Sheyla Mafra, Edja Costa, Raphael Albino, Jeniffer Dantas, Juvenal, Henrique Samuel, Davi Neres, Luana Dantas, ..",
     sinopse: "No ápice da saga, AFTS 3 marca o grande retorno do Time Oito para encerrar o primeiro ciclo — e, claro, enfrentar mais uma ameaça escolar que ninguém pediu, mas todo mundo teme: as AFTS Finais. Desta vez, o terror vem com humor, caos e uma quantidade de comédia que beira o irresponsável. A antiga inimiga Daniela de Assis ressurge, acompanhada de novos antagonistas como Sheyla Mafra e Arthur Teti, que bagunçaram a escola inteira sem dó. E, para completar, o grupo descobre que não estava sozinho nessa luta. Assim entram em cena Jeniffer Dantas, Juvenal e outras figuras iconicamente essenciais, incluindo uma participação absolutamente improvável de Dráuzio Varella, surgindo unicamente para derrubar mitos biológicos e também a paciência de algumas pessoas. Entre provas sem fim, trabalhos que desafiam a sanidade e códigos que parecem rodar eternamente, o Time Oito precisa decidir se está pronto para enfrentar as tão temidas avaliações finais — ou se vai acabar entrando para a história como o fracasso mais icônico e patacumbástico que o ETE já viu.",
-    image: "AFTS 3 (2025) (1).png"
+    image: "AFTS 3 (2025).png"
   },
   {
     titulo: "Marília Pópis — Ela Chegou Para Arrumar a Casa, e Talvez a Vida dos Outros.",
@@ -119,6 +119,7 @@ window.onclick = (e) => {
   if (e.target === modal) modal.style.display = "none";
 };
 // // Fechar ao clicar fora da caixa também
+
 
 
 
