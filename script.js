@@ -114,8 +114,9 @@ function abrirModal(i) {
 // ====================
 // FECHAR O MODAL
 // ====================
-closeBtn.onclick = () => modal.style.display = "none";
-// // Quando clicar no X → sumir
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
 
 window.onclick = (e) => {
   if (e.target === modal) modal.style.display = "none";
