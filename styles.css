@@ -45,6 +45,7 @@ body {
 .modal-content {
   background: #1f1f1f;       /* // Caixa escura */
   padding: 20px;
+  position: relative;
   border-radius: 12px;
   width: 500px;              /* // Tamanho fixo */
   max-height: 90vh;          /* // Altura máxima */
