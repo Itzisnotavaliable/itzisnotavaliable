@@ -39,14 +39,7 @@ const filmes = [
   }
 ];
 
-const filmes2026 = [
-  {
-    titulo: "BBBCAST",
-    elenco: "Andrey Vieira, Artur Coelho, Matheus Thiago, Luan Murilo, Luana Dantas, Henrique Samuel e Pedro Victor",
-    sinopse: "Ainda em desenvolvimento..",
-    image: ""
-  }
-];
+
 
 
 // ====================
@@ -96,20 +89,6 @@ filmes.forEach((filme, index) => {
   container.appendChild(card);
 });
 
-filmes2026.forEach((filme, index) => {
-  const card = document.createElement("div");
-  card.className = "card";
-
-  card.innerHTML = `
-    <h2>${filme.titulo}</h2>
-    <p>${filme.elenco}</p>
-  `;
-
-  card.addEventListener("click", () => abrirModal2026(index));
-
-  container2026.appendChild(card);
-});
-
 // ====================
 // FUNÇÃO PARA ABRIR O MODAL
 // ====================
@@ -130,14 +109,6 @@ function abrirModal(i) {
   // // Exibe o modal (ele estava escondido)
 }
 
-function abrirModal2026(i) {
-  modalImg.src = `assets/${filmes2026[i].image}`;
-  modalTitulo.textContent = filmes2026[i].titulo;
-  modalElenco.textContent = "Elenco: " + filmes2026[i].elenco;
-  modalSinopse.textContent = "Sinopse: " + filmes2026[i].sinopse;
-
-  modal.style.display = "flex";
-}
 
 
 // ====================
@@ -152,7 +123,6 @@ window.onclick = (e) => {
 // // Fechar ao clicar fora da caixa também
 
 
-const container2026 = document.getElementById("filmes-2026");
 
 
 
