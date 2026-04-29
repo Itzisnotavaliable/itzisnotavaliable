@@ -41,7 +41,7 @@ const filmes = [
     titulo: "BBBCAST - Já te deram pão e circo. O resto você chama de entretenimento",
     elenco: "Andrey Vieira, Artur Coelho, Matheus Thiago, Henrique Samuel, Luan Murilo, Luana Dantas, ..",
     sinopse: "Ainda em desenvolvimento..",
-    image: 
+    image: "BBBCAST (2026).png"
 ];
 
 
