@@ -36,7 +36,12 @@ const filmes = [
     elenco: "Aldineide de Queiróz, Andrey Vieira, Artur Coelho, Gabriel Vitor, Marília Romeiro, Matheus Thiago, Samuel Erivaldo, ..",
     sinopse: "Após desaparecer nos céus de Londres em 1930, a lendária babá mágica Marília Pópis (Marília Romeiro) está de volta! O vento a trouxe para um destino supercalifragilitisispialidocemente diferente: o calor intenso e vibrante de Pernambuco, Brasil. Sua nova e complexa missão é a família Silva, um clã caótico e hilário que precisa de mais do que uma faxina na casa, mas sim na alma. Pópis (Marília Romeiro) terá que encarar a sobrecarregada matriarca, Marcela (a mãe, interpretada por Aldineide); as figuras adultas peculiares, incluindo a excêntrica Tia Roberta (Matheus Thiago), a irmã louca do interior, e a religiosa Irmã Eveline (Andrey Vieira), a freira mais rebelde do convento de São Félix. Além disso, ela precisa manter Gabriel Vitor, o pão da casa que sempre tenta fugir para comprar cigarro, sob vigilância. Enquanto tenta disciplinar os filhos Jailson (Artur Coelho), o filho country com alma sertaneja, e Adailson (Samuel Erivaldo), a criança encapetada com planos mirabolantes, Pópis se depara com um roteiro de piadas preconceituosas (daquelas que fazem o espectador rir e refletir), lições sobre o valor de cada momento e um calor dos infernos que derrete qualquer pose inglesa. Marília Pópis logo aprende que seu truque de mágica clássica pode não funcionar em um país onde o povo já está acostumado com o improvável. Ela entende que supercalifragilistisispicalidoce não impressiona quem cresceu vendo os brasileiros darem um jeito em tudo. Prepare-se para ver a babá mais amada do cinema descobrir que, no Brasil, o feitiço vira contra o feiticeiro... e que a melhor forma de voar é de carona em uma pipa, porque o Uber tá caro. ",
     image: "MARÍLIA POPIS.png"
-  }
+  },
+  {
+    titulo: "BBBCAST - Já te deram pão e circo. O resto você chama de entretenimento",
+    elenco: "Andrey Vieira, Artur Coelho, Matheus Thiago, Henrique Samuel, Luan Murilo, Luana Dantas, ..",
+    sinopse: "Ainda em desenvolvimento..",
+    image: 
 ];
 
 
