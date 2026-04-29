@@ -42,6 +42,7 @@ const filmes = [
     elenco: "Andrey Vieira, Artur Coelho, Matheus Thiago, Henrique Samuel, Luan Murilo, Luana Dantas, ..",
     sinopse: "Ainda em desenvolvimento..",
     image: "BBBCAST (2026).png"
+  }
 ];
 
 
