@@ -55,7 +55,8 @@ const livros = [
     titulo: "A Um Amigo Chamado Matheus",
     autor: "Andrey Vieira",
     descricao: "Em Desenvolvimento...",
-    image: "Desenvolvimento.jpg"
+    image: "Desenvolvimento.jpg",
+    pdf: "AmigoChamadoMatheus.pdf"
   }
 ];
 
