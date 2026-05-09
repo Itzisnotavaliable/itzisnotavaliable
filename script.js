@@ -1,10 +1,9 @@
 const filmes = [
-
   {
-   titulo: "AFTS 1 — A Origem do Mal",
-   elenco: "Artur Coelho, Andrey Vieira, Gabriel Vitor, Matheus Thiago, Samuel Erivaldo, Fernanda Cabral, Geane Vieira, Elisangela Ayres, ..",
-   sinopse: "No ETE Cícero Dias, um grupo de estudantes recém-chegados tenta lidar com a avalanche de trabalhos e atividades que parece nunca parar. A pressão atinge o limite quando Artur desaparece sem explicação. Dias depois, ele retorna… mas algo nele não volta junto. O olhar é estranho, os silêncios são longos demais, e a escola começa a reagir à presença dele de formas que ninguém consegue explicar. Agora, eles precisam sobreviver ao que quer que tenha voltado no lugar do amigo, entender seus motivos e descobrir a verdade antes que a próxima ausência seja definitiva.",
-   image: "AFTS (2025).png"
+    titulo: "AFTS 1 — A Origem do Mal",
+    elenco: "Artur Coelho, Andrey Vieira, Gabriel Vitor, Matheus Thiago, Samuel Erivaldo, Fernanda Cabral, Geane Vieira, Elisangela Ayres, ..",
+    sinopse: "No ETE Cícero Dias, um grupo de estudantes recém-chegados tenta lidar com a avalanche de trabalhos e atividades que parece nunca parar. A pressão atinge o limite quando Artur desaparece sem explicação. Dias depois, ele retorna… mas algo nele não volta junto. O olhar é estranho, os silêncios são longos demais, e a escola começa a reagir à presença dele de formas que ninguém consegue explicar. Agora, eles precisam sobreviver ao que quer que tenha voltado no lugar do amigo, entender seus motivos e descobrir a verdade antes que a próxima ausência seja definitiva.",
+    image: "AFTS (2025).png"
   },
 
   {
