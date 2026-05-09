@@ -70,6 +70,17 @@ body {
 #sobre-site, #time {
   max-width: 900px;
   margin: 40px auto;
+}
+
+#sobre-site {
+  text-align: justify;
+}
+
+#sobre-site h2 {
+  text-align: center;
+}
+
+#time {
   text-align: center;
 }
 
@@ -162,14 +173,4 @@ body {
 
 .btn-livro:hover {
   background: #cfcfcf;
-}
-
-/* titulo estilo justify*/
-
-#sobre-site {
-  text-align: justify;
-}
-
-#sobre-site h2 {
-  text-align: center;
 }
