@@ -133,3 +133,31 @@ body {
 
   font-size: 14px;
 }
+
+/* mais atualizações */
+
+.btn-livro {
+  display: block;
+
+  margin: 15px;
+
+  padding: 10px;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  color: #000;
+
+  text-decoration: none;
+
+  border-radius: 10px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.btn-livro:hover {
+  background: #cfcfcf;
+}
