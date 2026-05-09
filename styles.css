@@ -99,9 +99,9 @@ body {
 .livro-card {
   width: 220px;
 
-  background: black;
+  background: #1a1a1a;
 
-  color: rgb(255, 255, 255);
+  color: white;
 
   border-radius: 15px;
 
