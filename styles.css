@@ -129,10 +129,12 @@ h2 {
 
 #modalImg {
   width: 100%;
-  height: 350px;
+  max-height: 80vh;
 
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+
+  background: #000;
 }
 
 #modalTitulo,
