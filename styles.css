@@ -62,137 +62,118 @@ h2 {
 /* GRID FILMES */
 /* ========================= */
 
+/* GRID FILMES */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
   margin-top: 20px;
 }
 
-/* ========================= */
 /* CARD FILMES */
-/* ========================= */
-
 .card {
   background: #1f1f1f;
-  border-radius: 10px;
+  border-radius: 14px;
   overflow: hidden;
-
   cursor: pointer;
-  transition: 0.2s;
-
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: translateY(-5px) scale(1.01);
   background: #2a2a2a;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
 }
 
 /* IMAGEM DOS FILMES */
 .card img {
   width: 100%;
-  height: 240px;
-
-  object-fit: contain;
+  height: 320px;
+  object-fit: cover;
   object-position: center;
-
-  background: #000;
-
   display: block;
 }
 
 /* CONTEÚDO DO CARD */
-.card h2,
-.card p {
-  padding: 0 14px;
-}
-
 .card h2 {
-  margin-top: 14px;
-  margin-bottom: 10px;
-
-  font-size: 28px;
+  padding: 14px 14px 8px;
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.3;
 }
 
 .card p {
-  margin-bottom: 14px;
+  padding: 0 14px 14px;
+  margin: 0;
   color: #d1d1d1;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
-/* ========================= */
 /* MODAL */
-/* ========================= */
-
 .modal {
   display: none;
-
   position: fixed;
   inset: 0;
-
-  background: rgba(0,0,0,0.85);
-  backdrop-filter: blur(4px);
-
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
   z-index: 999;
-
   justify-content: center;
   align-items: center;
-
   padding: 20px;
 }
 
 /* CARD ABERTO */
 .modal-content {
   background: #1a1a1a;
-
-  width: 90%;
-  max-width: 420px;
-
-  border-radius: 14px;
-
+  width: min(92vw, 700px);
+  max-height: 90vh;
+  border-radius: 16px;
   overflow: hidden;
-
   position: relative;
-
   animation: aparecer 0.25s ease;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
 }
 
-/* IMAGEM COMPLETA */
+/* IMAGEM DO MODAL */
 #modalImg {
   width: 100%;
-  max-height: 50vh;
-
+  max-height: 55vh;
   object-fit: contain;
-
-  display: block;
-
   background: #000;
+  display: block;
 }
 
-#modalTitulo,
+/* TÍTULO, ELENCO E SINOPSE */
+#modalTitulo {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 18px 20px 10px;
+  text-align: center;
+}
+
 #modalElenco,
 #modalSinopse {
-  padding: 16px;
-}
-
-#modalTitulo {
-  font-size: 30px;
-  margin: 0;
+  padding: 0 20px 16px;
+  color: #e0e0e0;
+  line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 #modalElenco {
-  padding-top: 0;
-  padding-bottom: 10px;
-
   color: #cfcfcf;
+  font-size: 0.95rem;
 }
 
 #modalSinopse {
-  padding-top: 0;
-  padding-bottom: 20px;
-
-  color: #e5e5e5;
+  padding-bottom: 22px;
+  font-size: 1rem;
 }
 
 /* BOTÃO FECHAR */
