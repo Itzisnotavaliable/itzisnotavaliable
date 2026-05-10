@@ -13,9 +13,6 @@ body {
   padding: 20px;
   line-height: 1.5;
   height: 100%;
-
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 /* CONTAINER */
