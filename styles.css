@@ -175,16 +175,6 @@ body {
   background: #cfcfcf;
 }
 
-body {
-  margin: 0;
-  font-family: system-ui, Arial;
-  background: radial-gradient(circle at top, #1a1a1a, #0b0b0b);
-  color: white;
-  display: flex;
-  justify-content: center;
-  padding: 40px;
-}
-
 /* container principal */
 #chat {
   width: 460px;
