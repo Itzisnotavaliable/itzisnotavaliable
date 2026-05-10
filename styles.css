@@ -163,7 +163,9 @@ h2 {
 /* IMAGEM COMPLETA */
 #modalImg {
   width: 100%;
-  height: auto;
+  max-height: 45vh;
+
+  object-fit: contain;
 
   display: block;
 
