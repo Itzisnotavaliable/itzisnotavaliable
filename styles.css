@@ -93,7 +93,7 @@ h2 {
 /* IMAGEM DOS FILMES */
 .card img {
   width: 100%;
-  height: 340px;
+  height: 240px;
 
   object-fit: contain;
   object-position: center;
