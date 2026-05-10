@@ -176,55 +176,77 @@ body {
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: #0f0f0f;
+  margin: 0;
+  font-family: system-ui, Arial;
+  background: radial-gradient(circle at top, #1a1a1a, #0b0b0b);
   color: white;
   display: flex;
   justify-content: center;
-  padding: 30px;
+  padding: 40px;
 }
 
+/* container principal */
 #chat {
-  width: 420px;
-  background: #151515;
-  border-radius: 16px;
+  width: 460px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
   padding: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
 }
 
 /* resposta estilo “IA” */
 #resposta {
-  background: #1f1f1f;
-  padding: 15px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  min-height: 60px;
+  background: rgba(124, 58, 237, 0.12);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  min-height: 70px;
   line-height: 1.4;
-  border-left: 4px solid #7c3aed;
 }
 
-/* grid das perguntas */
+/* GRID de perguntas (isso muda tudo) */
 #perguntas {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
 }
 
-/* cards das perguntas */
+/* cards modernos */
 .pergunta {
-  background: #222;
-  border: 1px solid #2f2f2f;
-  color: white;
-  padding: 12px;
-  border-radius: 10px;
-  cursor: pointer;
   text-align: left;
-  transition: 0.2s;
+  padding: 14px;
+  border-radius: 14px;
+  cursor: pointer;
+
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  color: white;
+  transition: 0.25s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-/* efeito hover moderno */
+/* efeito de brilho */
+.pergunta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(124,58,237,0.2), transparent);
+  transition: 0.4s;
+}
+
+.pergunta:hover::before {
+  left: 100%;
+}
+
 .pergunta:hover {
-  background: #2e2e2e;
   transform: translateY(-2px);
-  border-color: #7c3aed;
+  border-color: rgba(124, 58, 237, 0.5);
 }
