@@ -151,11 +151,11 @@ h2 {
 
   max-height: 90vh;
 
-  overflow-y: auto;
-
   border-radius: 14px;
 
   position: relative;
+
+  overflow: hidden;
 
   animation: aparecer 0.25s ease;
 }
