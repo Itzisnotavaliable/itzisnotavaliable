@@ -1,5 +1,6 @@
+
 /* ========================= */
-/* RESET */
+/* RESET GLOBAL */
 /* ========================= */
 
 * {
@@ -8,74 +9,75 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /* ========================= */
-/* FUNDO PREMIUM */
+/* BASE DO SITE */
 /* ========================= */
 
 body {
   font-family: system-ui, Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0b0b10);
-  color: #f5f5f5;
-  min-height: 100vh;
+  background: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.5;
 }
 
-/* ========================= */
-/* CONTAINER PRINCIPAL */
-/* ========================= */
-
+/* container principal */
 #app {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 28px;
+  padding: 24px;
 
   display: flex;
   flex-direction: column;
-  gap: 56px;
+  gap: 48px;
 }
 
 /* ========================= */
-/* TIPOGRAFIA MAIS FORTE */
-/* ========================= */
-
-h1, h2 {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-p {
-  color: rgba(255,255,255,0.75);
-}
-
-/* ========================= */
-/* CARDS (VISUAL PREMIUM) */
+/* CARDS GERAIS */
 /* ========================= */
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
 }
 
 .card {
-  background: linear-gradient(145deg, #16161f, #101018);
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 16px;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
 
-  padding: 18px;
+  padding: 16px;
   cursor: pointer;
 
   transition: 0.25s ease;
 
-  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  overflow: hidden;
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(124,58,237,0.6);
+  transform: translateY(-4px);
+  border-color: #7c3aed;
+}
+
+/* imagens dos cards */
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 /* ========================= */
-/* MODAL MODERNO */
+/* MODAL */
 /* ========================= */
 
 .modal {
@@ -84,37 +86,51 @@ p {
   inset: 0;
 
   background: rgba(0,0,0,0.75);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(6px);
 
   justify-content: center;
   align-items: center;
+
+  padding: 20px;
 }
 
 .modal-content {
-  width: 90%;
-  max-width: 540px;
+  width: 100%;
+  max-width: 520px;
 
-  background: #12121a;
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 18px;
+  background: #121212;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
 
-  padding: 22px;
+  padding: 20px;
   position: relative;
 
-  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  max-height: 85vh;
+  overflow-y: auto;
 }
 
 .close {
   position: absolute;
-  top: 12px;
+  top: 10px;
   right: 14px;
   font-size: 26px;
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .close:hover {
   opacity: 1;
+}
+
+/* ========================= */
+/* SEÇÕES TEXTUAIS */
+/* ========================= */
+
+#sobre-site,
+#time {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* ========================= */
@@ -124,22 +140,24 @@ p {
 .grid-livros {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 22px;
+  gap: 20px;
 }
 
 .livro-card {
-  background: #12121a;
+  background: #141414;
+  border: 1px solid #2a2a2a;
   border-radius: 16px;
   overflow: hidden;
 
-  border: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  flex-direction: column;
 
-  transition: 0.3s;
+  transition: 0.25s ease;
 }
 
 .livro-card:hover {
-  transform: scale(1.04);
-  border-color: rgba(124,58,237,0.6);
+  transform: scale(1.03);
+  border-color: #7c3aed;
 }
 
 .livro-card img {
@@ -149,33 +167,34 @@ p {
 }
 
 /* ========================= */
-/* CHAT (DESTAQUE VISUAL) */
+/* CHAT (IA FAKE ORGANIZADO) */
 /* ========================= */
 
 #chat {
   width: 100%;
-  max-width: 540px;
+  max-width: 520px;
   margin: 0 auto;
 
-  background: #12121a;
-  border-radius: 20px;
+  background: #121212;
+  border: 1px solid #2a2a2a;
+  border-radius: 18px;
 
-  padding: 22px;
+  padding: 20px;
 
-  border: 1px solid rgba(255,255,255,0.06);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
-/* resposta estilo IA */
+/* resposta */
 #resposta {
-  background: rgba(124,58,237,0.12);
-  border: 1px solid rgba(124,58,237,0.3);
+  background: rgba(124, 58, 237, 0.12);
+  border: 1px solid rgba(124, 58, 237, 0.3);
 
-  padding: 16px;
-  border-radius: 14px;
+  padding: 14px;
+  border-radius: 12px;
 
-  min-height: 80px;
-  line-height: 1.5;
+  min-height: 70px;
 }
 
 /* perguntas */
@@ -185,25 +204,25 @@ p {
   gap: 10px;
 }
 
-/* pergunta estilo premium real */
+/* botão pergunta */
 .pergunta {
   padding: 14px;
   border-radius: 12px;
 
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
 
   color: white;
   cursor: pointer;
 
-  transition: 0.25s ease;
   text-align: left;
+  transition: 0.2s ease;
 }
 
 .pergunta:hover {
   transform: translateX(6px);
-  border-color: rgba(124,58,237,0.6);
-  background: rgba(124,58,237,0.08);
+  border-color: #7c3aed;
+  background: #1f1f1f;
 }
 
 /* ========================= */
@@ -212,11 +231,15 @@ p {
 
 @media (max-width: 768px) {
   #app {
-    padding: 18px;
-    gap: 36px;
+    padding: 16px;
+    gap: 32px;
   }
 
-  #chat {
-    width: 100%;
+  .card img {
+    height: 200px;
+  }
+
+  .livro-card img {
+    height: 260px;
   }
 }
