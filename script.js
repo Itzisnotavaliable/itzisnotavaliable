@@ -139,75 +139,52 @@ window.onclick = (e) => {
 
 console.log("JS carregou");
 
-/* teste IA */
-
 function responder(pergunta) {
+  let resposta;
 
-  pergunta = pergunta.toLowerCase();
-
-  if (pergunta.includes("afts")) {
-    return "AFTS é a principal saga do Time 08.";
+  if (pergunta === "protagonistas") {
+    resposta = "Normalmente são os membros do Time 8, que além de dirigirem, gostam de participar de suas obras, enriquecendo o elenco com seus talentos.";
   }
 
-  if (pergunta.includes("matheus")) {
-    return "Matheus é um dos membros centrais do Time 08.";
+  else if (pergunta === "antagonistas") {
+    resposta = "Existem diversos antagonistas dentro das produções, porém os mais notáveis são: A Geógrafa Daniela de Assis, a historiadora Sheyla Mafra, a filósofa marionetista Luana Dantas, o Mestre dos Cálculos Teti e a Bióloga suprema Edja Costa (em memória e agradecimento).";
   }
 
-  if (pergunta.includes("daniela")) {
-    return "Daniela de Assis é a maior geógrafa do universo.";
+  else if (pergunta === "pior filme") {
+    resposta = "Considerado por muitos o pior, temos AFTS 2, o filme com pior recepção dentro da franquia, e, à parte, N1, com o segundo maior número de críticas.";
   }
 
-  return "Não sei responder isso ainda.";
-}
-
-function enviarPergunta() {
-
-  const input = document.getElementById("userInput");
-
-  const chatBox = document.getElementById("chat-box");
-
-  const pergunta = input.value;
-
-  chatBox.innerHTML += `
-    <p><strong>Você:</strong> ${pergunta}</p>
-  `;
-
-  const resposta = responder(pergunta);
-
-  chatBox.innerHTML += `
-    <p><strong>IA:</strong> ${resposta}</p>
-  `;
-
-  input.value = "";
-}
-
-function responder(pergunta) {
-
-  pergunta = pergunta.toLowerCase();
-
-  if (pergunta.includes("afts")) {
-    return "AFTS é a principal saga do Time 08, onde se passa a trama da entidade que possui Artur no primeiro filme e apresenta toda aquela sequência de eventos caóticos envolvendo o sobrenatural e os ocorridos escolares que criam o humor no longa.";
+  else if (pergunta === "geografados") {
+    resposta = "Os personagens de maior popularidade entre os espectadores são Daniela de Assis, Matheus Thiago e Samuel Erivaldo.";
   }
 
-  if (pergunta.includes("artur")) {
-    return "Artur é um dos protagonistas da franquia.";
+  else if (pergunta === "maior inimiga") {
+    resposta = "Com toda certeza Marília Flávia, a maior crítica de AFTS, sendo negativada em diversos posts, mas ainda notável no cenário de avaliações (tipo a Miss Sunshine em 'Chicago').";
   }
 
-  if (pergunta.includes("matheus")) {
-    return "Matheus é um dos membros mais importantes do Time 08.";
+  else if (pergunta === "quantos filmes") {
+    resposta = "De acordo com o desenvolvedor Andrey Vieira, conhecido publicamente como CHAOS, AFTS se encerraria no quarto longa, que promete eternizar a franquia e fechar o ciclo sobrenatural e ácido dos filmes.";
   }
 
-  if (pergunta.includes("daniela")) {
-    return "Daniela de Assis é a maior geógrafa do universo.";
+  else if (pergunta === "melhores atores") {
+    resposta = "1- Matheus Thiago (Geografados, N1, AFTS 3 e Marília Pópis) | 2- Andrey Vieira (AFTS 2, AFTS 3, Marília Pópis e BBBCAST) | 3- Gabriel Vitor (Cabum) | 4- Artur Coelho (AFTS 1 e Marília Pópis) | 5- Samuel Erivaldo (Geografados).";
   }
 
-  if (pergunta.includes("bbbcast")) {
-    return "BBBCAST é um projeto focado em entretenimento e caos absoluto.";
+  else if (pergunta === "maria cecilia") {
+    resposta = "Maria Cecília é uma personagem importante da saga AFTS, que assim como Artur, sofreu nas mãos da entidade, sendo fundamental para a virada de chave no primeiro longa.";
   }
 
-  if (pergunta.includes("geografados")) {
-    return "GEOGRAFADOS mostra o Time 08 enfrentando Daniela de Assis.";
+  else if (pergunta === "aft5") {
+    resposta = "Tá repreendido.";
   }
 
-  return "Não sei responder isso ainda.";
+  else if (pergunta === "livros") {
+    resposta = "Sim, o Time Oito possui livros, todos de autoria de Andrey Vieira, atual escritor.";
+  }
+
+  else {
+    resposta = "Pergunta não encontrada.";
+  }
+
+  document.getElementById("resposta").innerText = resposta;
 }
