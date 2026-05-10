@@ -1,4 +1,28 @@
 /* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FUNDO E TEXTO */
+body {
+  background: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+/* CONTAINER */
+#app {
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+/* ========================= */
+/* SOBRE O SITE + TIME */
+/* ========================= */
 
 #sobre-site,
 #time {
@@ -13,28 +37,31 @@
   text-align: center;
 }
 
+#sobre-site p {
+  margin-top: 15px;
+}
+
 .foto-time {
   display: block;
   width: 250px;
-  margin: 20px auto 0 auto;
+  margin-top: 20px;
   border-radius: 10px;
 }
 
-/* FUNDO E TEXTO */
-body {
-  background: #121212;
-  color: white;
-  font-family: Arial, sans-serif;
-  padding: 20px;
+/* ========================= */
+/* TÍTULOS */
+/* ========================= */
+
+h1,
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-/* CONTAINER */
-#app {
-  max-width: 1000px;
-  margin: 0 auto;
-}
+/* ========================= */
+/* GRID FILMES */
+/* ========================= */
 
-/* GRID SIMPLES */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -42,7 +69,7 @@ body {
   margin-top: 20px;
 }
 
-/* CARD SIMPLES */
+/* CARD */
 .card {
   background: #1f1f1f;
   padding: 16px;
@@ -60,11 +87,16 @@ body {
 .card img,
 .livro-card img {
   width: 100%;
-  height: 220px;      /* altura fixa = alinhamento perfeito */
-  object-fit: cover;  /* corta sem deformar */
+  height: 220px;
+  object-fit: cover;
   object-position: center;
   display: block;
+  border-radius: 8px;
 }
+
+/* ========================= */
+/* MODAL */
+/* ========================= */
 
 .modal {
   display: none;
@@ -114,10 +146,15 @@ body {
   margin-bottom: 10px;
 }
 
+#modalElenco {
+  margin-bottom: 10px;
+}
+
 #modalSinopse {
   padding-bottom: 20px;
 }
 
+/* FECHAR */
 .close {
   position: absolute;
   top: 10px;
@@ -130,6 +167,7 @@ body {
   z-index: 10;
 }
 
+/* ANIMAÇÃO */
 @keyframes aparecer {
   from {
     opacity: 0;
@@ -142,7 +180,10 @@ body {
   }
 }
 
-/* LIVROS SIMPLES */
+/* ========================= */
+/* LIVROS */
+/* ========================= */
+
 .grid-livros {
   display: flex;
   flex-wrap: wrap;
@@ -155,13 +196,17 @@ body {
   background: #1a1a1a;
   border-radius: 10px;
   overflow: hidden;
+  padding-bottom: 10px;
 }
 
-/* CHAT SIMPLES */
+/* ========================= */
+/* CHAT */
+/* ========================= */
+
 #chat {
   width: 100%;
   max-width: 500px;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 
 #resposta {
@@ -177,15 +222,18 @@ body {
   gap: 8px;
 }
 
-.pergunta {
+/* BOTÕES */
+#perguntas button {
   padding: 10px;
   border-radius: 8px;
   background: #1f1f1f;
   border: none;
   color: white;
   cursor: pointer;
+  transition: 0.2s;
+  text-align: left;
 }
 
-.pergunta:hover {
+#perguntas button:hover {
   background: #2a2a2a;
 }
