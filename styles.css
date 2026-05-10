@@ -118,17 +118,37 @@ h2 {
 .modal {
   position: fixed;
   inset: 0;
+
   display: none;
+
   justify-content: center;
   align-items: center;
+
   padding: 20px;
+
   background: rgba(0, 0, 0, 0.85);
-  overflow: hidden;
+
+  overflow-y: auto;
+
+  z-index: 999;
 }
 
+
 .modal-content {
+  width: 90%;
+  max-width: 500px;
+
   max-height: 90vh;
+
+  background: #1a1a1a;
+
+  border-radius: 14px;
+
   overflow-y: auto;
+
+  position: relative;
+
+  animation: aparecer 0.25s ease;
 }
 
 /* IMAGEM DO MODAL */
