@@ -128,12 +128,8 @@ h2 {
 }
 
 .modal-content {
-  width: min(92vw, 700px);
   max-height: 90vh;
   overflow-y: auto;
-  overflow-x: hidden;
-  overscroll-behavior: contain;
-  -webkit-overflow-scrolling: touch;
 }
 
 /* IMAGEM DO MODAL */
