@@ -177,18 +177,31 @@ h2 {
 }
 
 /* BOTÃO FECHAR */
-.close {
-  position: absolute;
-  top: 10px;
-  right: 14px;
+@media (max-width: 600px) {
+  .modal-content {
+    width: 95vw;
+    max-height: 92vh;
+  }
 
-  font-size: 28px;
-  cursor: pointer;
+  .close {
+    top: 8px;
+    right: 8px;
+    width: 48px;
+    height: 48px;
+    font-size: 32px;
+  }
 
-  color: white;
-  z-index: 10;
+  #modalTitulo {
+    font-size: 1.3rem;
+    padding: 16px 16px 8px;
+  }
+
+  #modalElenco,
+  #modalSinopse {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
-
 /* ANIMAÇÃO */
 @keyframes aparecer {
   from {
