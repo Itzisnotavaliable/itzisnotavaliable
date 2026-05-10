@@ -1,6 +1,7 @@
-/* ==================== */
-/* RESET GLOBAL */
-/* ==================== */
+
+/* ========================= */
+/* RESET PROFISSIONAL */
+/* ========================= */
 
 * {
   margin: 0;
@@ -8,237 +9,283 @@
   box-sizing: border-box;
 }
 
-/* ==================== */
+html, body {
+  height: 100%;
+}
+
+/* ========================= */
 /* BASE DO SITE */
-/* ==================== */
+/* ========================= */
 
 body {
-  background: #121212;
-  color: white;
-  font-family: Arial, sans-serif;
-
-  /* importante: evita tudo ficar lado a lado */
-  display: block;
+  font-family: system-ui, Arial, sans-serif;
+  background: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.5;
 }
 
-/* container principal do site */
+/* container principal */
 #app {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 24px;
 
-  /* força tudo em coluna */
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 48px;
 }
 
-/* ==================== */
-/* GRID DE CARDS */
-/* ==================== */
+/* ========================= */
+/* TÍTULOS E TEXTO */
+/* ========================= */
+
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+p {
+  opacity: 0.9;
+}
+
+/* ========================= */
+/* GRID DE CARDS (SEÇÕES) */
+/* ========================= */
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
 
 .card {
-  background: #1f1f1f;
-  padding: 20px;
-  border-radius: 12px;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
+  padding: 18px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.25s ease;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .card:hover {
-  transform: scale(1.03);
-  background: #282828;
+  transform: translateY(-4px);
+  border-color: #7c3aed;
+  background: #202020;
 }
 
-/* ==================== */
-/* MODAL */
-/* ==================== */
+/* ========================= */
+/* MODAL (POPUP PROFISSIONAL) */
+/* ========================= */
 
 .modal {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.8);
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(6px);
 
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(3px);
+  padding: 20px;
 }
 
 .modal-content {
-  background: #1f1f1f;
+  width: 100%;
+  max-width: 520px;
+  max-height: 85vh;
+
+  background: #181818;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+
   padding: 20px;
-  border-radius: 12px;
-  width: 500px;
-  max-height: 90vh;
   overflow-y: auto;
+
   position: relative;
 }
 
 .close {
   position: absolute;
-  right: 15px;
   top: 10px;
-  font-size: 28px;
+  right: 14px;
+  font-size: 26px;
   cursor: pointer;
+  opacity: 0.7;
 }
 
-/* ==================== */
-/* SEÇÕES GERAIS */
-/* ==================== */
+.close:hover {
+  opacity: 1;
+}
 
-#sobre-site,
-#time {
+/* ========================= */
+/* SEÇÕES INSTITUCIONAIS */
+/* ========================= */
+
+.section {
+  text-align: center;
   max-width: 900px;
   margin: 0 auto;
-  text-align: center;
 }
 
-.foto-time {
-  width: 250px;
-  border-radius: 10px;
-  margin-top: 15px;
+.section img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 16px;
 }
 
-/* ==================== */
-/* LIVROS */
-/* ==================== */
+/* ========================= */
+/* LIVROS (CARDS PREMIUM) */
+/* ========================= */
 
 .grid-livros {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  justify-content: center;
 }
 
 .livro-card {
-  width: 220px;
-  background: #1a1a1a;
-  border-radius: 15px;
+  background: #141414;
+  border: 1px solid #262626;
+  border-radius: 16px;
   overflow: hidden;
-  border: 1px solid #2f2f2f;
   transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .livro-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
+  border-color: #7c3aed;
 }
 
 .livro-card img {
   width: 100%;
-  height: 320px;
+  height: 300px;
   object-fit: cover;
 }
 
 .livro-card h2 {
-  font-size: 20px;
-  margin: 10px;
+  font-size: 18px;
+  margin: 12px;
 }
 
 .livro-card p {
-  margin: 10px;
+  margin: 0 12px 12px;
   font-size: 14px;
+  opacity: 0.85;
 }
 
 .btn-livro {
-  display: block;
-  margin: 15px;
+  margin: 12px;
   padding: 10px;
   text-align: center;
-  background: white;
-  color: black;
-  text-decoration: none;
+
+  background: #ffffff;
+  color: #000;
+
   border-radius: 10px;
-  font-weight: bold;
-  transition: 0.3s;
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: 0.25s;
 }
 
 .btn-livro:hover {
-  background: #cfcfcf;
+  background: #dcdcdc;
 }
 
-/* ==================== */
-/* CHAT (IA FAKE) */
-/* ==================== */
+/* ========================= */
+/* CHAT (IA FAKE PREMIUM) */
+/* ========================= */
 
 #chat {
-  width: 460px;
+  width: 100%;
+  max-width: 520px;
   margin: 0 auto;
 
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 20px;
+  background: #141414;
+  border: 1px solid #2a2a2a;
+  border-radius: 18px;
+
   padding: 20px;
 
-  backdrop-filter: blur(10px);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 /* resposta */
 #resposta {
   background: rgba(124, 58, 237, 0.12);
-  border: 1px solid rgba(124, 58, 237, 0.3);
-  padding: 16px;
-  border-radius: 14px;
-  margin-bottom: 18px;
+  border: 1px solid rgba(124, 58, 237, 0.35);
+
+  padding: 14px;
+  border-radius: 12px;
+
   min-height: 70px;
-  line-height: 1.4;
 }
 
-/* perguntas */
+/* lista de perguntas */
 #perguntas {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 
-/* cards de pergunta */
+/* pergunta estilo botão premium */
 .pergunta {
-  text-align: left;
   padding: 14px;
-  border-radius: 14px;
-  cursor: pointer;
+  text-align: left;
 
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+
   color: white;
+  cursor: pointer;
 
   transition: 0.25s ease;
   position: relative;
   overflow: hidden;
 }
 
-/* efeito brilho */
+.pergunta:hover {
+  border-color: #7c3aed;
+  transform: translateY(-2px);
+}
+
+/* efeito de luz */
 .pergunta::before {
   content: "";
   position: absolute;
   top: 0;
-  left: -100%;
-  width: 100%;
+  left: -120%;
+  width: 120%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(124,58,237,0.2),
-    transparent
-  );
-  transition: 0.4s;
+  background: linear-gradient(120deg, transparent, rgba(124,58,237,0.25), transparent);
+  transition: 0.5s;
 }
 
 .pergunta:hover::before {
-  left: 100%;
+  left: 120%;
 }
 
-.pergunta:hover {
-  transform: translateY(-2px);
-  border-color: rgba(124, 58, 237, 0.5);
+/* ========================= */
+/* RESPONSIVIDADE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  #app {
+    padding: 16px;
+    gap: 32px;
+  }
+
+  #chat {
+    width: 100%;
+  }
 }
