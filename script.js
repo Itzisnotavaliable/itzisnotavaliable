@@ -139,3 +139,44 @@ window.onclick = (e) => {
 
 console.log("JS carregou");
 
+/* teste IA */
+
+function responder(pergunta) {
+
+  pergunta = pergunta.toLowerCase();
+
+  if (pergunta.includes("afts")) {
+    return "AFTS é a principal saga do Time 08.";
+  }
+
+  if (pergunta.includes("matheus")) {
+    return "Matheus é um dos membros centrais do Time 08.";
+  }
+
+  if (pergunta.includes("daniela")) {
+    return "Daniela de Assis é a maior geógrafa do universo.";
+  }
+
+  return "Não sei responder isso ainda.";
+}
+
+function enviarPergunta() {
+
+  const input = document.getElementById("userInput");
+
+  const chatBox = document.getElementById("chat-box");
+
+  const pergunta = input.value;
+
+  chatBox.innerHTML += `
+    <p><strong>Você:</strong> ${pergunta}</p>
+  `;
+
+  const resposta = responder(pergunta);
+
+  chatBox.innerHTML += `
+    <p><strong>IA:</strong> ${resposta}</p>
+  `;
+
+  input.value = "";
+}
